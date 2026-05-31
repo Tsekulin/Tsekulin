@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tunnel QR Code</title>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+  <style>
+    body { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; font-family: sans-serif; background: #1a1a1a; color: white; }
+    #qr { margin: 20px; }
+    a { color: #4fc3f7; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h1>Physcult Server Tunnel</h1>
+  <canvas id="qr"></canvas>
+  <a href="https://dark-frogs-shake.loca.lt">https://dark-frogs-shake.loca.lt</a>
+  <script>
+    QRCode.toCanvas(document.getElementById('qr'), 'https://dark-frogs-shake.loca.lt', { width: 300 });
+  </script>
+</body>
+</html>
